@@ -237,15 +237,24 @@ a:focus {
 #home {
     padding: 0;
     color: #fff;
-    background-image: url(../img/cover/home.gif);
+    background-image: url(../img/cover/cover.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    min-height: 95vh;
+    width: auto;
 }
 
 @media screen and (max-width: 767px) {
     #home{
-    	background-image: url(http://subtlepatterns.com/patterns/dark_embroidery.png);
+    	background-image: url(../img/cover/cover-mobile.jpg);
+    }
+    .vertical-center {
+        margin: 0;
+        position: absolute;
+        top: 25vh;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
     }
 }
 

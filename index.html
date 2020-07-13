@@ -77,24 +77,36 @@
                     <div class="border"></div>
                 </div>
                 <div class="row">
-                    <div class="col-sm-4 service animated hiding" data-animation="fadeInUp" data-delay="300">
-                        <i class="fa fa-cogs fa-5x"></i>
-                        <h3 class="mt-5 mb-4"><a href="#">Mecanique</a></h3>
-                        <!-- <p>Mecanique</p> -->
-                        <!-- <p>Mixage sonore</p> -->
-                        <!-- <p>Post Production audio cinema</p> -->
-                        <!-- <p>Pre-mastering et Mastering</p> -->
-                        <!-- <p>Illustration sonore</p> -->
-                        <!-- <p>Formation Audio</p> -->
+                  <a href="#vehicules" onclick="document.getElementById('vehicules').click()">
+                    <div class="col-sm-2 offset-sm-1 service animated hiding" data-animation="fadeInUp" data-delay="300">
+                        <i class="fa fa-car fa-5x"></i>
+                        <h3 class="mt-5 mb-4"><a href="#vehicules" onclick="document.getElementById('vehicules').click()">Vehicules</a></h3>
                     </div>
-                    <div class="col-sm-4 service animated hiding" data-animation="fadeInUp" data-delay="600">
+                  </a>
+                  <a href="#moto" onclick="document.getElementById('moto').click()">
+                    <div class="col-sm-2 service animated hiding" data-animation="fadeInUp" data-delay="900">
+                        <i class="fa fa-motorcycle fa-5x"></i>
+                        <h3 class="mt-5 mb-4"><a href="#moto" onclick="document.getElementById('moto').click()">2 Roues</a></h3>
+                    </div>
+                  </a>
+                  <a href="#army" onclick="document.getElementById('army').click()">
+                    <div class="col-sm-2 service animated hiding" data-animation="fadeInUp" data-delay="900">
+                        <i class="fa fa-shield fa-5x"></i>
+                        <h3 class="mt-5 mb-4"><a href="#army" onclick="document.getElementById('army').click()">Forces Armees</a></h3>
+                    </div>
+                  </a>
+                  <a href="#construction" onclick="document.getElementById('construction').click()">
+                    <div class="col-sm-2 service animated hiding" data-animation="fadeInUp" data-delay="600">
                         <i class="fa fa-building fa-5x"></i>
-                        <h3 class="mt-5 mb-4"><a href="#">Construction</a></h3>
+                        <h3 class="mt-5 mb-4"><a href="#construction" onclick="document.getElementById('construction').click()">Constructions</a></h3>
                     </div>
-                    <div class="col-sm-4 service animated hiding" data-animation="fadeInUp" data-delay="900">
-                        <i class="fa fa-wrench fa-5x"></i>
-                        <h3 class="mt-5 mb-4"><a href="#">Bricoles en tout genre</a></h3>
+                  </a>
+                  <a href="#special" onclick="document.getElementById('special').click()">
+                    <div class="col-sm-2 service animated hiding" data-animation="fadeInUp" data-delay="900">
+                        <i class="fa fa-gift fa-5x"></i>
+                        <h3 class="mt-5 mb-4"><a href="#special" onclick="document.getElementById('special').click()">Projets Speciaux</a></h3>
                     </div>
+                  </a>
                 </div>
             </div>
         </div>
@@ -112,20 +124,26 @@
                         <div id="portfolio">
                             <ul class="filters list-inline">
                                 <li class="list-inline-item">
-                                    <a class="active" data-filter="*" href="#">Afficher tout</a>
+                                    <a class="active" data-filter="*" href="#" id="allitems">Afficher tout</a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a data-filter=".photography" href="#">Construction</a>
+                                    <a data-filter=".vehicules" id="vehicules" href="#">Vehicules</a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a data-filter=".branding" href="#">Mecanique</a>
+                                    <a data-filter=".moto" id="moto" href="#">2 Roues</a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a data-filter=".web" href="#">Divers</a>
+                                    <a data-filter=".army" id="army" href="#">Forces Armees</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a data-filter=".construction" id="construction" href="#">Construction</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a data-filter=".special" id="special" href="#">Projets Speciaux</a>
                                 </li>
                             </ul>
                             <ul class="items list-unstyled clearfix animated hiding mb-0" data-animation="fadeInRight">
-                                <li class="item branding">
+                                <li class="item moto">
                                     <a href="work.html" data-gall="work" data-vbtype="ajax">
                                         <img src="img/work/1.jpg" alt="">
                                         <div class="overlay">
@@ -133,7 +151,7 @@
                                         </div>
                                     </a>
                                 </li>
-                                <li class="item photography">
+                                <li class="item construction">
                                     <a href="work.html" data-gall="work" data-vbtype="ajax">
                                         <img src="img/work/2.jpg" alt="">
                                         <div class="overlay">
@@ -141,7 +159,7 @@
                                         </div>
                                     </a>
                                 </li>
-                                <li class="item branding">
+                                <li class="item vehicules">
                                     <a href="work.html" data-gall="work" data-vbtype="ajax">
                                         <img src="img/work/3.jpg" alt="">
                                         <div class="overlay">
@@ -149,7 +167,7 @@
                                         </div>
                                     </a>
                                 </li>
-                                <li class="item photography">
+                                <li class="item construction">
                                     <a href="work.html" data-gall="work" data-vbtype="ajax">
                                         <img src="img/work/4.jpg" alt="">
                                         <div class="overlay">
@@ -157,7 +175,7 @@
                                         </div>
                                     </a>
                                 </li>
-                                <li class="item photography">
+                                <li class="item construction">
                                     <a href="work.html" data-gall="work" data-vbtype="ajax">
                                         <img src="img/work/5.jpg" alt="">
                                         <div class="overlay">
@@ -165,7 +183,7 @@
                                         </div>
                                     </a>
                                 </li>
-                                <li class="item web">
+                                <li class="item special">
                                     <a href="work.html" data-gall="work" data-vbtype="ajax">
                                         <img src="img/work/6.jpg" alt="">
                                         <div class="overlay">
@@ -173,15 +191,15 @@
                                         </div>
                                     </a>
                                 </li>
-                                <li class="item photography">
+                                <li class="item construction">
                                     <a href="work.html" data-gall="work" data-vbtype="ajax">
                                         <img src="img/work/7.jpg" alt="">
                                         <div class="overlay">
-                                            <span>Jeep</span>
+                                            <span>Allstar</span>
                                         </div>
                                     </a>
                                 </li>
-                                <li class="item web">
+                                <li class="item army">
                                     <a href="work.html" data-gall="work" data-vbtype="ajax">
                                         <img src="img/work/8.jpg" alt="">
                                         <div class="overlay">
